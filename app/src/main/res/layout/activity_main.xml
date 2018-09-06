@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:onClick="load"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加载" />
+
+    <EditText
+        android:id="@+id/edit_cmd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入命令" />
+
+
+    <Button
+        android:onClick="execute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="执行命令" />
+
+    <TextView
+        android:textColor="@color/colorAccent"
+        android:scrollbars="vertical"
+        android:id="@+id/tx_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="结果输出" />
+</LinearLayout>
